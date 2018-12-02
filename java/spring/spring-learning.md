@@ -88,8 +88,29 @@
 	>> {new -> finalize()}
 	>
 	> spring自带多个容器实现,可以归纳为两种不同的类型
-	>> bean工厂是最简单的容器，提供基本的DI支持
+	>> bean工厂[接口定义：beans.factory.beanFactory]是最简单的容器，提供基本的DI支持
 	>
-	>> 应用上下文基于BeanFactory构建，并提供应用框架级别的服务，例如从属性文件解析文本信息以及发布应用时间给感兴趣的事件监听者
+	>> 应用上下文[接口定义：context.ApplicationContext]基于BeanFactory构建，并提供应用框架级别的服务，例如从属性文件解析文本信息以及发布应用时间给感兴趣的事件监听者
 	>
 	> bean工厂对大多数应用太低级，因此，应用上下文比bean工厂更受欢迎
+
+9. 常见的应用上下文
+
+	> 基于java配置类加载spring应用上下文、spring web应用上下文
+	> 
+	> 1.AnnotationConfigApplicationContext、2.AnnotationConfigWebApplicationContext
+	>
+	> 类路径[all]下的XML加载上下文定义，把应用上下文的定义文件作为类资源
+	> 
+	> 3.ClassPathXmlApplicationContext
+	> 
+	> 从文件系统路径[指定的]下的XML加载上下文定义
+	> 
+	> 4.FileSystemXmlApplicationContext
+	> 
+	> 从web应用下的XML加载上下文定义
+	> 
+	> 5.XmlWebApplicationContext
+
+	**所谓的应用上下文就是spring容器嘛，这个容器可以比喻为一个盒子，盒子用来管理java类的整个生命周期，盒子上有个门，即 `context.getBean()`，这个方法可以获取到容器内的java类实例。**
+	`Return the bean instance that uniquely matches the given object type, if any.`
