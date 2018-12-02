@@ -48,10 +48,10 @@
 	> XML
 	>> @ImportResource("config/config.xml")
 	>> ClassPathXmlApplicationContext 加载位于应用程序类路径下的一个或多个XML配置文件
-	>>> <pre class="prettyprit lang-java">
+	>>> 
 	ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("/xml_name");
 	ClassName name = ctx.getBean(ClassName.class);
-	</pre>
+	
 	
 	更多关于 DI 的 书籍，Hhanji R.Prasanna 《Dependency Injection》,覆盖依赖注入所有的内容。 —— 不是我说的 :]
 	
@@ -72,7 +72,7 @@
 	> 也就是在执行函数 embarkOnQuest 之前调用 singBeforeQuest 之后调用 singBeforeQuest
 
 7. 使用spring模板消除样板式代码（`重复代码`）
-	> `模样板式代码举栗子`
+	> `样板式代码举栗子`
 	> ![](https://i.imgur.com/m8yL4mJ.png)
 	>
 	> 再举个栗子，spring的JdbcTemplate（利用java5特性JdbcTemplate实现）
