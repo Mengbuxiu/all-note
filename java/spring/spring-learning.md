@@ -114,3 +114,20 @@
 
 	**所谓的应用上下文就是spring容器嘛，这个容器可以比喻为一个盒子，盒子用来管理java类的整个生命周期，盒子上有个门，即 `context.getBean()`，这个方法可以获取到容器内的java类实例。**
 	`Return the bean instance that uniquely matches the given object type, if any.`
+
+10. 装配bean--手动
+
+	> 注解：@ComponentScan 默认会扫描与配置类相同的包（以及子包）
+	>> 扫描其他包 @ComponentScan("pack_name")
+	>> 扫描多个基础包 @ComponentScan(basePackages={"pack1","pack2"})[类型不安全的]
+	>> 用类所在的包代替包名： @ComponentScan(basePackageClasses={A.class,B.class})
+	> 
+	> XML:<context:component-scan base-package="要扫描的包名"/>
+
+11.装配bean--自动
+
+	> @Autowired/@Inject [java依赖注入规范] 
+	> 可以放在成员变量（对象上），构造函数上（有对象作为参数注入），setter（同上），可以放在任何类的任何方法上 
+	> 有且只有一个bean满足依赖需求时，这个bean将会被装配。
+	> 如果没有可以匹配的bean，则会抛出异常，可以用@Autowired(required=false)
+	> 避免异常[依旧会尝试装配]，但是要小心这个属性空指针，因为它有可能未被装配
