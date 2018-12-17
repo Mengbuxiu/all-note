@@ -1,4 +1,4 @@
-#reids 知识点#
+# reids 知识点 #
 1. 常见数据结构及应用场景
 	
 	**string** 普通的set和get，做简单的kv缓存
