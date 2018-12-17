@@ -1,4 +1,4 @@
-#Session#
+# Session #
 > session 指 服务器上维护的session域
 
 1. 早期是基于 tomcat + redis 的方式做的
