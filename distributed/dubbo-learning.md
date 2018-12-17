@@ -1,4 +1,4 @@
-#Dubbo#
+# Dubbo #
 1. 通信原理![](https://i.imgur.com/xJdEgYF.png)
 2. 注册中心挂了dubbo还能用吗？
 
