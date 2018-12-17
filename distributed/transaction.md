@@ -1,4 +1,4 @@
-#Transaction#
+# Transaction #
 1. XA：两阶段方案提交
 	
 	spring + JTA
