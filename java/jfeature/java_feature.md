@@ -27,5 +27,6 @@
 	>
 	>>解决方案：使用外部的NTP服务器实现此抽象类
 	
-	- 
+	- millis()方法可以替代currentTimeMillis(),`Gets the current millisecond instant of the clock.`
+	- 大多数应用程序应该避免使用此方法并使用{@link Instant}来表示时间线上的瞬间而不是原始的毫秒值。 提供该方法是为了允许在高性能用例中使用时钟，其中对象的创建是不可接受的[对象不可创建]。`Most applications should avoid this method and use {@link Instant} to represent an instant on the time-line rather than a raw millisecond value. This method is provided to allow the use of the clock in high performance use cases where the creation of an object would be unacceptable.`
  		 
