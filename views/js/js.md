@@ -30,3 +30,7 @@
 	复制代码代码如下:
 	
 	input type="text" autocomplete="off" id="number" 
+
+3. 多个同class节点如何实现同一click事件
+
+	$(" xxx 父节点").on("click","子节点",fun(){})
