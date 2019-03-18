@@ -34,3 +34,4 @@
 3. 多个同class节点如何实现同一click事件
 
 	$(" xxx 父节点").on("click","子节点",fun(){})
+	`永远不要用bootstrap提供的class样式去监听各种事件，不明白js的内部原理，用bs的class会多死好几倍的脑细胞`
