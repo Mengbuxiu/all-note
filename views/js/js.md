@@ -36,4 +36,7 @@
 	$(" xxx 父节点").on("click","子节点",fun(){})
 	`永远不要用bootstrap提供的class样式去监听各种事件，不明白js的内部原理，用bs的class会多死好几倍的脑细胞`
 	
-	关于jsp，一个页面多次初始化页面填充数据时要记得清除已渲染的数据
+4. 清除页面节点已存在的数据
+
+	比如radio或checkbox的选中状态，removeAttr("checked")，用过有时会失效，prop("checked",true) => 添加选中，
+	prop("checked",false) => 取消选中
