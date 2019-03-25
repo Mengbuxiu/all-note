@@ -40,3 +40,14 @@
 
 	比如radio或checkbox的选中状态，removeAttr("checked")，用过有时会失效，prop("checked",true) => 添加选中，
 	prop("checked",false) => 取消选中
+
+5. deep clone
+
+	> let json = {
+      "a": 1,
+      "b": 2
+    };
+
+    克隆
+
+    > let json_1 = JSON.parse(JSON.stringify(json));
