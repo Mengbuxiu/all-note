@@ -51,3 +51,13 @@
     克隆
 
     > let json_1 = JSON.parse(JSON.stringify(json));
+
+6.	disabled
+
+	- 两种方法设置disabled属性　　
+		- $('#area').attr("disabled",true);
+		- $('#area').attr("disabled","disabled");
+	- 三种方法移除disabled属性
+		- $('#area').attr("disabled",false);
+		- $('#area').removeAttr("disabled");
+		- $('#area').attr("disabled","");
