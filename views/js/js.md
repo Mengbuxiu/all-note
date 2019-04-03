@@ -1,4 +1,4 @@
-# Java Script 使用笔记 #
+# Java Script/JQ 使用笔记 #
 
 ----------
 
@@ -61,3 +61,10 @@
 		- $('#area').attr("disabled",false);
 		- $('#area').removeAttr("disabled");
 		- $('#area').attr("disabled","");
+
+7. find和children的区别
+
+	- .children(selector) 方法是返回匹配元素集合中每个元素的所有子元素（仅儿子辈）。参数可选，添加参数表示通过选择器进行过滤，对元素进行筛选。
+
+    - .find(selector)方法是返回匹配元素集合中每个元素的后代。参数是必选的，可以为选择器、jquery对象可元素来对元素进行筛选。
+
