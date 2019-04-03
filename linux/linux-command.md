@@ -123,3 +123,8 @@
 				- x<文件> 指定不要处理.zip压缩文件中的哪些文件。
 				
 				- Z unzip -Z等于执行zipinfo指令
+
+2. 环境配置
+
+	- 静态ip
+		- 进入/etc/sysconfig/network-scripts目录，找到该接口的配置文件（ifcfg-enp0s3）。如果没有，请创建一个
