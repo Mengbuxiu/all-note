@@ -132,3 +132,6 @@
 	- 网络服务
 		- 重启
 			- systemctl restart network.service
+
+	- win 下压缩文件tar.gz的办法
+		- 先压缩成tar，再压缩为gz
