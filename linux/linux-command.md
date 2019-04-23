@@ -125,6 +125,25 @@
 				- Z unzip -Z等于执行zipinfo指令
 		- cp src des 复制命令
 
+	- 解压缩
+		- *.tar 用 tar -xvf 解压
+	
+		- *.gz 用 gzip -d或者gunzip 解压
+	
+		- *.tar.gz和*.tgz 用 tar -xzf 解压
+	
+		- *.bz2 用 bzip2 -d或者用bunzip2 解压
+	
+		- *.tar.bz2用tar -xjf 解压
+	
+		- *.Z 用 uncompress 解压
+	
+		- *.tar.Z 用tar -xZf 解压
+	
+		- *.rar 用 unrar e解压
+	
+		- *.zip 用 unzip 解压
+
 2. 环境配置
 
 	- 静态ip
@@ -135,3 +154,6 @@
 
 	- win 下压缩文件tar.gz的办法
 		- 先压缩成tar，再压缩为gz
+
+	- 重启防火墙：专治能ping不能shell
+		- systemctl restart firewalld
