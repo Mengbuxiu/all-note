@@ -39,10 +39,34 @@
 	接口传入的json转换为JSONObject时如何来判空？如果每个方法内使用前都进行一次判空会显得代码很繁琐，那该如何处理？
 	> 写一个私有方法[递归]，对传入的参数进行循环校验，如果有某个参数为null，直接获取key然后抛个异常
 
+6. 登陆
+
+	如何保证登陆安全？
+	> 用户名和密码前端md5加密并异或，对于短位密码可以防止字典爆破和哈希碰撞
+	> 这样在后台比较的就是异或后的值
+	
+	> 但是这样还有一个问题，客户端是能看到你的js的，也就是说你的规则不是不可破解的，
+	
+	那这样该怎么做？
+	> 最简单的办法 http -> https，这样传输时的数据就看不到了
+	>> 参考 [https与http的区别](https://www.cnblogs.com/taomylife/p/4778006.html)
+	
+	>> [get和post的区别](https://segmentfault.com/a/1190000018129846#articleHeader0)
+
+	>> 单纯的把请求方式改为表单post提交并不能保证数据的安全，至于为什么，自己写个程序抓个包看看就知道了，从抓包结果就可以看出来明显的区别是get的请求数据是在请求头里放着的，post是在请求体里存放的，但都是`可见的`。
+	
+	> [js混淆](https://www.zhihu.com/question/47047191)，他人看你的js代码会费很多精力
+
+	>> 但值得一提的是，混淆也是能看到你代码里的逻辑的，只不过相对于你不混淆禁用js压缩而言要更加的耗费精力
+
+	如何防止伪造cookie越权？
+	> 采用时间戳hash的方式，在请求返回给客户端时将时间戳写入到cookie中，即便在有权限用户登陆的过程中，权限数据包被抓取了，恶意人员想要利用cookie模拟登陆时，可以判断cookie中的请求时间，如果判定是N之前的就可以拦截这个请求了。时间戳写入cookie中甚至不用加密，直接在写入时间的逻辑中指定减去或加上几个小时，这样即便别人利用这个cookie时间戳也会失效。`保险起见，最好还是做一个加密`。
 
 ----------
 # 顺便再记录一下项目遇到比较诡异的情况 #
-1. 项目用sqlite3，配置jdbc.url的路径是application.properties中进行的，jdbc.url	我是这样写的
+1. 项目用sqlite3，配置jdbc.url的路径是application.properties中进行的，jdbc.url	
+ 
+	 我是这样写的
 
 	> jdbc.url = jdbc:sqlite:/name.sqlite
 
@@ -63,6 +87,6 @@
 2. 项目里用的JdbcTemplate，查询就是queryForMap，但是sqlite的默认值设置似乎不生	效，所以有的字段默认值是null，用map查询出来时如果某字段是null就会出现没有相应的	key，造成这种bug。
 
 	解决方式
-	> hibernate有@Column注解，设置 name="key"，nullable=fasle，
+	> hibernate有@Column注解，实体设置 name="key"，nullable=fasle，
 	> columnDefinition="INT default 0"
 	
