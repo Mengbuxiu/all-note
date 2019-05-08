@@ -35,11 +35,10 @@
 	- aggregation 聚合 n.
 	- assignment 分配 n.
 	- custom 特性 n.
-
+	- restricted 受限制的 adj.
 
 2. Modal phrase[语气词用法]
 	- No two elements 没有两个元素
-	- 
 		
 3. phrase
 	- be visible by 按 ... 可见
@@ -65,7 +64,7 @@
 	- already set 已设置的
 	- instance count 实例计数
 	- be compatible with 与...兼容
-
+	- distinguish from 区别于
 
 4. 向 `google translator` 学习
 	- the list of interfaces for the proxy class to implement
