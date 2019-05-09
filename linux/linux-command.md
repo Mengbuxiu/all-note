@@ -143,6 +143,13 @@
 		- *.rar 用 unrar e解压
 	
 		- *.zip 用 unzip 解压
+	- 改变一个或多个文件的存取模式
+		- chmod [options] mode files
+		- 只能文件属主或特权用户才能使用该功能来改变文件存取模式。mode可以是数字形式或以who opcode permission形式表示。who是可选的，默认是a(所有用户)。只能选择一个opcode(操作码)。可指定多个mode，以逗号分开。
+			- + 提权
+				- 比如 +x 赋予执行权
+			- http://www.cnblogs.com/younes/archive/2009/11/20/1607174.html
+		
 
 2. 环境配置
 
