@@ -36,6 +36,7 @@
 	- assignment 分配 n.
 	- custom 特性 n.
 	- restricted 受限制的 adj.
+	- effectively 有效地 adv.
 
 2. Modal phrase[语气词用法]
 	- No two elements 没有两个元素
