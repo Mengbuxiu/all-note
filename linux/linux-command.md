@@ -164,3 +164,7 @@
 
 	- 重启防火墙：专治能ping不能shell
 		- systemctl restart firewalld
+
+3. 可执行文报：段错误(吐核)
+
+	https://blog.csdn.net/qq_42351880/article/details/85332621
