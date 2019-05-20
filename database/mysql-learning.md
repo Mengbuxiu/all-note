@@ -271,3 +271,13 @@
 	-  SQL最大的缺点还是SQL语言本身的局限性——SQL本身是一种结构化查询语言，我们不应该用存储过程处理复杂的业务逻辑——让SQL回归它“结构化查询语言”的功用。复杂的业务逻辑，还是交给代码去处理吧
 
 	> https://www.cnblogs.com/zhangweizhong/p/3871785.html
+
+9. mysql远程登陆
+
+	mysql>GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%'IDENTIFIED BY 'mypassword' WITH GRANT OPTION; 
+
+  	如果是固定ip就这么写
+ 	mysql>grant all privileges on *.* to 'root'@'192.168.0.49'identified by '123' with grant option;
+
+	推送设置到内存或重启服务器也行
+　　mysql>FLUSH PRIVILEGES 
