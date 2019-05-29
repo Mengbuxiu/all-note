@@ -68,3 +68,7 @@
 
     - .find(selector)方法是返回匹配元素集合中每个元素的后代。参数是必选的，可以为选择器、jquery对象可元素来对元素进行筛选。
 
+8. css 文字超出行数换行
+
+	- word-wrap:break-word;
+

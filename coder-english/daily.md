@@ -38,6 +38,7 @@
 	- restricted 受限制的 adj.
 	- effectively 有效地 adv.
 	- strict 严格的 adj.
+	- modify 修改 v.
 
 2. Modal phrase[语气词用法]
 	- No two elements 没有两个元素
