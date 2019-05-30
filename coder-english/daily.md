@@ -41,6 +41,10 @@
 	- modify 修改 v.
 	- permitted 允许 adj.
 	- indefinitely 无限期的 adv.
+	- preserve 保留 v.
+		- chrome console中有 preserve log √ 保留日志
+		- 对于调试一闪而过的bug很有效
+	- navigated 导航
 
 2. Modal phrase[语气词用法]
 	- No two elements 没有两个元素
