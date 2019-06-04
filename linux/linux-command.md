@@ -173,6 +173,10 @@
 		- ps -p 3150 -L
 			- 显示进程id为3150的进程的所有线程
 
+	- scp
+		- scp -r srcFile ip:tgtFile
+			- 向另一台电脑发文件
+
 2. 环境配置
 
 	- 静态ip
