@@ -2,7 +2,8 @@
 
 ----------
 1. 几个方法
-
+	- Thread>join
+		- 
 	- Thread.sleep()
 		- 导致当前正在执行的线程休眠（暂时停止执行）指定的毫秒数
 	- Thread>yield()
@@ -33,3 +34,39 @@
 
 	---------------
 	摘自 https://bbs.csdn.net/topics/390037268
+
+3. volatile
+	
+	只能保证修改变量后其他线程可以感知到，但两个线程同时修改一个变量时还是会有冲突
+4. 重(chong)入锁
+
+	相比 synchronized 更灵活
+	> 可以手动获得锁和释放锁，如 
+	> 
+	> reentrantLock.lock()
+	>
+	> try { i++; }
+	>
+	> finally{ reentrantLock.unlock() }  
+
+	为什么称为重入锁？
+	
+	> 因为你可以这样,一个线程*可以多次获得锁，
+	> 要求必须释放相同的次数 
+	> reentrantLock.lock();
+	> reentrantLock.lock();
+	>
+	> try { i++; }
+	>
+	> finally{ reentrantLock.unlock();reentrantLock.unlock(); } 
+
+	使用重入锁还有一个好处
+	> 重入锁提供中断处理能力
+	>>中断响应
+	>如果一个线程正在等待锁，那么它仍然可以收到一个通知，
+	>被告知无需再等待，可以停止工作了。对于处理死锁有一定的好处。
+	>
+	> tryLock(时长,单位) 
+	> 等待一定时长后获取到锁返回true，否则返回false
+	>
+	> tryLock() 
