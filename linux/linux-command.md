@@ -25,6 +25,29 @@
 	- 重命名目录名称
 		- mv 源文件/目录 目标文件/目录
 
+	- 使用tar压缩文件
+
+	 	- tar -zcvf test.tar.gz ./test/
+
+		该命令表示压缩当前文件夹下的文件夹test，压缩后缀名为test.tar.gz
+
+		如果不需要压缩成gz，只需要后缀为tar格式的，那么输入如下命令：
+
+		- tar -cvf test.tar ./test/
+
+ 
+
+	- 使用tar解压文件
+
+		- tar -xzvf test.tar.gz  
+
+	该命令表示把后缀为.tar.gz的文件解压到当前文件夹下。
+
+	如果压缩文件的后缀是.tar，没有gz，则使用命令:
+
+		- tar -xvf test.tar
+
+
 	- 压缩
 		- zip
 			- 语 法：zip [-AcdDfFghjJKlLmoqrSTuvVwXyz$][-b <工作目录>][-ll][-n <字尾字符串>][-t <日期时间>][-<压缩效率>][压缩文件][文件...][-i <范本样式>][-x <范本样式>] 
@@ -176,6 +199,14 @@
 	- scp
 		- scp -r srcFile ip:tgtFile
 			- 向另一台电脑发文件
+
+	- rm
+		- rm -rf file/access
+			- 删除目录下所有文件，包含子目录
+		- rm -r filework
+			- 删除目录
+		- rm -r *
+			- 删除当前目录下的所有文件及目录 
 
 2. 环境配置
 
