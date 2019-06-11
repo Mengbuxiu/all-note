@@ -45,6 +45,8 @@
 		- chrome console中有 preserve log √ 保留日志
 		- 对于调试一闪而过的bug很有效
 	- navigated 导航
+	- initiate 	启动 v.
+	- iteration 迭代
 
 2. Modal phrase[语气词用法]
 	- No two elements 没有两个元素
