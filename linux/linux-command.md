@@ -6,6 +6,17 @@
 	- 查看指定占用端口的程序 
 		- lsof -i:端口号 
 		- netstat -tunlp|grep 端口号
+	- 防火墙端口
+		- firewall-cmd --list-ports
+			- 查看已开放的端口
+		- firewall-cmd --zone=public --add-port=80/tcp --permanent
+			- 开启端口
+		- firewall-cmd --reload 
+			- 重启firewall
+		- systemctl stop firewalld.service 
+			- 停止firewall
+		- systemctl disable firewalld.service 
+			- 禁止firewall开机启动
 	- 文件查找
 		- find / etc -name 'xxx*':`模糊查找`
 		- find / -name 'xxx':`精确查找`
