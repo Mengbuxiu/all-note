@@ -2,9 +2,14 @@
 
 ----------
 1. word	
+
 	- daily 日常 adv.
 		- the company is open daily 
 	- restriction 限制 n.
+	- expose 暴露 v.
+	- render 粉刷 v.
+	- demanded 需要 v.
+	- explicitly 明确地 adv.
 	- violate 违反 v.
 		- {@code IllegalArgumentException} will be thrown if any of the following restrictions is violated 
 		- 如果违反以下任何限制，将抛出{@code IllegalArgumentException}
@@ -53,6 +58,11 @@
 		
 3. phrase
 	- be visible by 按 ... 可见
+	- the last stage 最后阶段
+	- not ... at all 根本不
+	- get treated 被视为
+	- is available to 适用于
+	- is not intended for 不适合
 	- is equivalent to 相当于
 	- certain potentially 某些确定的
 	- it would not be possible for ...不可能
