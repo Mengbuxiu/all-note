@@ -1,7 +1,8 @@
 # Linux命令学习 #
 
 1. 命令
-
+	- 滚动查看日志
+		- tail -f catalina.out
 	- 文件上传： Xshell中		rz -> enter
 	- 查看指定占用端口的程序 
 		- lsof -i:端口号 
