@@ -2,12 +2,17 @@
 
 1. 命令
 	- 滚动查看日志
-		- tail -f catalina.out
-	- 文件上传： Xshell中		rz -> enter
-	- 查看指定占用端口的程序 
-		- lsof -i:端口号 
-		- netstat -tunlp|grep 端口号
-	- 防火墙端口
+		- tail -f catalina.outa
+	- linux互传文件 
+		- scp ip:srcPath destPath
+	- 添加静态路由
+		- https://www.cnblogs.com/wanghuaijun/p/8059664.html 
+	- 文件上传： Xshell中		
+		- rz -> enter
+	- 端口
+		- 查看指定占用端口的程序 
+			- lsof -i:端口号 
+			- netstat -tunlp|grep 端口号
 		- firewall-cmd --list-ports
 			- 查看已开放的端口
 		- firewall-cmd --zone=public --add-port=80/tcp --permanent
@@ -219,9 +224,8 @@
 			- 删除目录
 		- rm -r *
 			- 删除当前目录下的所有文件及目录 
-	- /etc/profile 
-		- source /etc...
-		- . /etc ...
+	- source
+		-  /etc/profile 
 		- 使修改的环境变量立即生效 
 
 2. 环境配置
