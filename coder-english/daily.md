@@ -6,6 +6,7 @@
 	- daily 日常 adv.
 		- the company is open daily 
 	- restriction 限制 n.
+	- independent 独立 n.
 	- expose 暴露 v.
 	- render 粉刷 v.
 	- demanded 需要 v.
