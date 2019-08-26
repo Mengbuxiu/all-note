@@ -2,7 +2,7 @@
 
 1. 命令
 	- 滚动查看日志
-		- tail -f catalina.outa
+		- tail -f catalina.out
 	- 抓包
 		- tcpdump -i eth0 port 3306 
 	- linux互传文件 
