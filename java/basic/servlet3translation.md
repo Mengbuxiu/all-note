@@ -43,3 +43,33 @@
 		- 它们使用许多Web服务器支持的标准API。
 		- 它们具有Java编程语言的所有优点，包括易于开发和平台独立性。
 		- 他们可以访问Java平台可用的大量API。
+
+2. servlet 接口
+
+	> Servlet接口是Java Servlet API的中心抽象。 所有servlet通过扩展实现接口的类，直接或更普遍地实现此接口。 Java Servlet API中实现Servlet接口的两个类是enericServlet和HttpServlet。 在大多数情况下，开发人员将扩展HttpServlet以实现其servlet。
+
+	1. 请求处理方法
+
+		> 基本的Servlet接口定义了一个用于处理客户端请求的服务方法。 为servlet容器路由到servlet实例的每个请求调用此方法。
+
+		> 处理对Web应用程序的并发请求通常要求Web Developer设计servlet，该servlet可以处理在特定时间在服务方法内执行的多个线程。
+
+		> 通常，Web容器通过在不同线程上并发执行服务方法来处理对同一servlet的并发请求。
+
+		1. HTTP特定请求处理方法
+
+			> HttpServlet抽象子类添加了基本Servlet接口之外的其他方法，这些方法由HttpServlet类中的service方法自动调用，以帮助处理基于HTTP的请求。
+
+			- doGet for handling HTTP GET requests
+			- doPost for handling HTTP POST requests
+			- doPut for handling HTTP PUT requests
+			- doDelete for handling HTTP DELETE requests
+			-  doHead for handling HTTP HEAD requests
+			- doOptions for handling HTTP OPTIONS requests
+			- doTrace for handling HTTP TRACE requests
+
+			> 通常在开发基于HTTP的servlet时，Servlet Developer只会关注自己的doGet和doPost方法。 其他方法被认为是非常熟悉HTTP编程的程序员使用的方法。
+
+		2. 其他方法
+
+			
