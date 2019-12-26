@@ -3,60 +3,73 @@
 ----------
 1. word	
 
-	- daily 日常 adv.
-		- the company is open daily 
-	- restriction 限制 n.
-	- independent 独立 n.
-	- expose 暴露 v.
-	- render 粉刷 v.
-	- demanded 需要 v.
-	- explicitly 明确地 adv.
-	- violate 违反 v.
-		- {@code IllegalArgumentException} will be thrown if any of the following restrictions is violated 
-		- 如果违反以下任何限制，将抛出{@code IllegalArgumentException}
-	- represent 代表 v.
-	- identical 相同的 adj.
-	- specified 特别的;指定的 adj.
-	- expression 表达 n.
-	- policy 政策 n.
-	- determine 决定 v.
-	- perform 指定 v.
-	- certain 某些 adj.
-	- potentially 某些 adj
-	- typically 一般 adv.
-	- thereby 从而 adv.
-	- opportunity 机会 n.
-	- routine 例程 n.
-		- A security manager routine simply returns if the operation is permitted
-		- 如果允许操作，则安全管理器例程仅返回[有点continue的意思]
-	- access 访问 v. 
-	- primitive 原始 adj.
-		- primitive type
-		- 基本类型
-	- significant 重要的 adj.
-	- combination 组合 n.
-	- distinct 不同的 adj.
-	- release 释放 v.
-	- **re**use 重用 v.
-	- aggregation 聚合 n.
-	- assignment 分配 n.
-	- custom 特性 n.
-	- restricted 受限制的 adj.
-	- effectively 有效地 adv.
-	- strict 严格的 adj.
-	- modify 修改 v.
-	- permitted 允许 adj.
-	- indefinitely 无限期的 adv.
-	- preserve 保留 v.
-		- chrome console中有 preserve log √ 保留日志
-		- 对于调试一闪而过的bug很有效
-	- navigated 导航
-	- initiate 	启动 v.
-	- iteration 迭代
+  - daily 日常 adv.
+  - assume 假设 v. 
+  - demonstrate 演示 v.
+  - sequential 串行 adj.
+  - pitfall 错误 n.
+  - illustrate 说明 v.
+  - hazards 危险 n.
+  - exploit 利用 v.
+  - verify 校验 v.
+  - nearly 几乎 adv.
+  - form 形式；表格 n. 形成 v.
+  - concepts 概念 n.
+  - compose  组成 v.
+  - mechanisms  机制 n.
+  - Fundamentals  基本原理 n.
+  - restriction 限制 n.
+  - independent 独立 n.
+  - expose 暴露 v.
+  - render 粉刷 v.
+  - demanded 需要 v.
+  - explicitly 明确地 adv.
+  - violate 违反 v.
+  	- {@code IllegalArgumentException} will be thrown if any of the following restrictions is violated 
+  	- 如果违反以下任何限制，将抛出{@code IllegalArgumentException}
+  - represent 代表 v.
+  - identical 相同的 adj.
+  - specified 特别的;指定的 adj.
+  - expression 表达 n.
+  - policy 政策 n.
+  - determine 决定 v.
+  - perform 指定 v.
+  - certain 某些 adj.
+  - potentially 某些 adj
+  - typically 一般 adv.
+  - thereby 从而 adv.
+  - opportunity 机会 n.
+  - routine 例程 n.
+  	- A security manager routine simply returns if the operation is permitted
+  	- 如果允许操作，则安全管理器例程仅返回[有点continue的意思]
+  - access 访问 v. 
+  - primitive 原始 adj.
+  	- primitive type
+  	- 基本类型
+  - significant 重要的 adj.
+  - combination 组合 n.
+  - distinct 不同的 adj.
+  - release 释放 v.
+  - **re**use 重用 v.
+  - aggregation 聚合 n.
+  - assignment 分配 n.
+  - custom 特性 n.
+  - restricted 受限制的 adj.
+  - effectively 有效地 adv.
+  - strict 严格的 adj.
+  - modify 修改 v.
+  - permitted 允许 adj.
+  - indefinitely 无限期的 adv.
+  - preserve 保留 v.
+  	- chrome console中有 preserve log √ 保留日志
+  	- 对于调试一闪而过的bug很有效
+  - navigated 导航
+  - initiate 	启动 v.
+  - iteration 迭代
 
 2. Modal phrase[语气词用法]
 	- No two elements 没有两个元素
-		
+	
 3. phrase
 	- be visible by 按 ... 可见
 	- the last stage 最后阶段
