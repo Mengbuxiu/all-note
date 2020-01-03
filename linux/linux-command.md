@@ -2,15 +2,33 @@
 
 1. 命令
 	- 滚动查看日志
+		
 		- tail -f catalina.out
+		
+	- 跳到文件底部 
+	
+	  - shift+G
+	
+	- 搜索关键字
+	
+	  - / + 关键字 或  ? + 关键字
+	
 	- 抓包
+		
 		- tcpdump -i eth0 port 3306 
+		
 	- linux互传文件 
+		
 		- scp ip:srcPath destPath
+		
 	- 添加静态路由
+		
 		- https://www.cnblogs.com/wanghuaijun/p/8059664.html 
+		
 	- 文件上传： Xshell中		
+		
 		- rz -> enter
+		
 	- 端口
 		- 查看指定占用端口的程序 
 			- lsof -i:端口号 
@@ -19,51 +37,61 @@
 			- 查看已开放的端口
 		- firewall-cmd --zone=public --add-port=80/tcp --permanent
 			- 开启端口
-		- firewall-cmd --reload 
+	- firewall-cmd --reload 
 			- 重启firewall
 		- systemctl stop firewalld.service 
-			- 停止firewall
+		- 停止firewall
 		- systemctl disable firewalld.service 
 			- 禁止firewall开机启动
+	
 	- 文件查找
-		- find / etc -name 'xxx*':`模糊查找`
+	- find / etc -name 'xxx*':`模糊查找`
 		- find / -name 'xxx':`精确查找`
+	
 	- 查看指定进程
+	
 		- ps -ef | grep '进程名称'
+	
 	- 杀死指定进程
+		
 		- kill -9 'pid' 
+		
 	- 查看内存占用百分比 
+		
 		- top 
+		
 	- 软链接
 		- ln -s 链接地址 目标地址
 			- 完成后在目标地址的目录下 `ll`会看到 -> 链接
-
+	
 	- 移动文件
-		- mv [option] 源文件/目录 目标文件/目录
-
+		
+	- mv [option] 源文件/目录 目标文件/目录
+		
 	- 重命名目录名称
-		- mv 源文件/目录 目标文件/目录
-
+		
+	- mv 源文件/目录 目标文件/目录
+		
 	- 使用tar压缩文件
-
+	
 	 	- tar -zcvf test.tar.gz ./test/
-
+	
 		该命令表示压缩当前文件夹下的文件夹test，压缩后缀名为test.tar.gz
-
+	
 		如果不需要压缩成gz，只需要后缀为tar格式的，那么输入如下命令：
-
+	
 		- tar -cvf test.tar ./test/
 
  
 
 	- 使用tar解压文件
-
+	
 		- tar -xzvf test.tar.gz  
-
+	
 	该命令表示把后缀为.tar.gz的文件解压到当前文件夹下。
-
+	
 	如果压缩文件的后缀是.tar，没有gz，则使用命令:
-
+	
 		- tar -xvf test.tar
 
 
@@ -106,10 +134,10 @@
 				- z 替压缩文件加上注释。 
 				- $ 保存第一个被压缩文件所在磁盘的卷册名称。 
 				- <压缩效率> 压缩效率是一个介于1-9的数值。
-
+	
 		- unzip
 			- 语 法：unzip [-cflptuvz][-agCjLMnoqsVX][-P <密码>][.zip文件][文件][-d <目录>][-x <文件>] 或 unzip [-Z]
-
+	
 			- 补充说明：unzip为.zip压缩文件的解压缩程序。
 			
 			- 参 数：
@@ -166,7 +194,7 @@
 				
 				- Z unzip -Z等于执行zipinfo指令
 		- cp src des 复制命令
-
+	
 	- 解压缩
 		- *.tar 用 tar -xvf 解压
 	
@@ -204,7 +232,7 @@
 				   p   管道特殊文件
 		- ll -h file_name
 			- 查看指定文件的信息
-
+	
 	- ps
 		- ps -aux
 			- 显示所有进程信息[更详细]
@@ -214,11 +242,11 @@
 			- 通过cpu或者内存使用排序
 		- ps -p 3150 -L
 			- 显示进程id为3150的进程的所有线程
-
+	
 	- scp
 		- scp -r srcFile ip:tgtFile
 			- 向另一台电脑发文件
-
+	
 	- rm
 		- rm -rf file/access
 			- 删除目录下所有文件，包含子目录

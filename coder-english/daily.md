@@ -5,6 +5,10 @@
 
   - daily 日常 adv.
   - assume 假设 v. 
+  - compact 紧凑的 adj.
+  - unreliable 不可靠的 adj.
+  - discrete 离散的 adj.
+  - several 一些 adj.
   - demonstrate 演示 v.
   - sequential 串行 adj.
   - pitfall 错误 n.
